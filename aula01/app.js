@@ -23,13 +23,13 @@ const cadastro = document.getElementById('cadastro')
 btnEnviar.addEventListener("click", function (event){
     
     event.preventDefault()
-    let nome = inputNome.Value
-    let email = inputEmail.Value
-    let assunto = inputAssunto.Value
-    let mensagem = inputMensagem.Value
+    let nome = inputNome.value
+    let email = inputEmail.value
+    let assunto = inputAssunto.value
+    let mensagem = inputMensagem.value
 
     if (nome === "" || email === "" ||assunto === ""  || mensagem === "") {
-        alert("insira algo valido")
+        alert("preencha todos os campos")
         mensagemErro.textContent = "preencha todos os campos"
         return
     }
