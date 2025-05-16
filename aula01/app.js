@@ -17,6 +17,7 @@ const inputEmail = document.getElementById('email')
 const inputAssunto = document.getElementById('assunto')
 const inputMensagem = document.getElementById('mensagem')
 const btnEnviar = document.getElementById('btnEnviar')
+const mensagemErro= document.getElementById('erro')
 
 btnEnviar.addEventListener("click", function (event){
     
@@ -28,6 +29,7 @@ btnEnviar.addEventListener("click", function (event){
 
     if (nome === "" || email === "" ||assunto === ""  || mensagem === "") {
         alert("insira algo valido")
+        mensagemErro.textContent = "preencha todos os campos"
         return
     }
     alert(`Nome: ${nome}\n E-mail: ${email}\n assunto: ${assunto}\n Mensagem : ${mensagem}\n`)
